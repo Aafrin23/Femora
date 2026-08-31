@@ -38,8 +38,18 @@ connectDB();
 // ============================================================
 // MIDDLEWARE
 // ============================================================
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://frontend-jh0x51bn5-aafrins-projects-7c47528f.vercel.app",
+];
 
-app.use(cors());
+app.use(
+  cors({
+    origin: allowedOrigins,
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 
 // ============================================================
