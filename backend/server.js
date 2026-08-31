@@ -3,7 +3,9 @@ dotenv.config();
 
 import express from "express";
 import cors from "cors";
+
 import connectDB from "./config/db.js";
+
 import authRoutes from "./routes/authRoutes.js";
 import wellnessRoutes from "./routes/wellnessRoutes.js";
 import plannerRoutes from "./routes/PlannerRoutes.js";
@@ -15,16 +17,34 @@ import inspirationRoutes from "./routes/inspirationRoutes.js";
 import learningRoutes from "./routes/learningRoutes.js";
 import settingsRoutes from "./routes/settingsRoutes.js";
 import chatRoutes from "./routes/chatRoutes.js";
+
 const app = express();
+
+// ============================================================
+// ENVIRONMENT CHECK
+// ============================================================
+
 console.log(
   "OpenAI key loaded:",
   process.env.OPENAI_API_KEY ? "YES ✅" : "NO ❌"
 );
 
+// ============================================================
+// DATABASE
+// ============================================================
+
 connectDB();
+
+// ============================================================
+// MIDDLEWARE
+// ============================================================
 
 app.use(cors());
 app.use(express.json());
+
+// ============================================================
+// API ROUTES
+// ============================================================
 
 app.use("/api/auth", authRoutes);
 app.use("/api/wellness", wellnessRoutes);
@@ -37,12 +57,17 @@ app.use("/api/inspiration", inspirationRoutes);
 app.use("/api/learning", learningRoutes);
 app.use("/api/settings", settingsRoutes);
 app.use("/api/chat", chatRoutes);
+
+// ============================================================
+// ROOT ROUTE
+// ============================================================
+
 app.get("/", (req, res) => {
-  res.send("Backend is working 🚀");
+  res.send("Femora Backend is working 🚀");
 });
 
-const PORT = process.env.PORT || 5000;
+// ============================================================
+// VERCEL EXPORT
+// ============================================================
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+export default app;
