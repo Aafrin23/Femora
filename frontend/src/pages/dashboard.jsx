@@ -5,7 +5,7 @@ import FeaturesNavbar from "../components/featuresnavbar";
 import API from "../api/User.js";
 
 import { getGoals } from "../api/goalapi.js";
-import { getJournals } from "../api/journalApi.js";
+import { getJournals } from "../api/journalapi.js";
 import { getCommunityPosts } from "../api/communityapi";
 import { getInspirations } from "../api/inspiration.js";
 import { getLearningPosts } from "../api/learning.js";

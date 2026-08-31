@@ -6,7 +6,7 @@ import {
   createJournal,
   updateJournal,
   deleteJournal,
-} from "../api/journalApi";
+} from "../api/journalapi";
 
 const moods = [
   { name: "Happy", emoji: "😊" },

@@ -1,8 +1,8 @@
 
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar.jsx";
 import DomeGallery from "../components/DomeGallery.jsx";
-import AuthModal from "../components/AuthModal.jsx";
+import AuthModal from "../components/authmodal.jsx";
 
 function Home() {
   const [showAuth, setShowAuth] = useState(false);
