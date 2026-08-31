@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./FemoraAI.css";
+import "./femoraAi.css";
 
 export default function FemoraAI({ isOpen, setIsOpen }) {
   const [message, setMessage] = useState("");
