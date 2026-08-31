@@ -1,0 +1,173 @@
+.femora-ai-button {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+
+  width: 60px;
+  height: 60px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #b76e79;
+  color: white;
+
+  font-size: 25px;
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 25px rgba(74, 24, 56, 0.25);
+
+  z-index: 9999;
+}
+
+.femora-ai-panel {
+  position: fixed;
+
+  right: 25px;
+  bottom: 25px;
+
+  width: 360px;
+  height: 550px;
+
+  background: #fff9f7;
+
+  border-radius: 22px;
+
+  box-shadow: 0 15px 45px rgba(74, 24, 56, 0.25);
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  z-index: 9999;
+}
+
+.femora-ai-header {
+  background: #4a1838;
+
+  color: white;
+
+  padding: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.femora-ai-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.femora-ai-header span {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.close-ai {
+  background: transparent;
+  border: none;
+
+  color: white;
+
+  font-size: 25px;
+
+  cursor: pointer;
+}
+
+.femora-ai-messages {
+  flex: 1;
+
+  padding: 18px;
+
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.message {
+  max-width: 80%;
+
+  padding: 11px 14px;
+
+  border-radius: 16px;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+.ai-message {
+  align-self: flex-start;
+
+  background: white;
+
+  color: #4a1838;
+
+  border-bottom-left-radius: 4px;
+}
+
+.user-message {
+  align-self: flex-end;
+
+  background: #b76e79;
+
+  color: white;
+
+  border-bottom-right-radius: 4px;
+}
+
+.typing {
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.femora-ai-input {
+  padding: 12px;
+
+  background: white;
+
+  display: flex;
+
+  gap: 8px;
+
+  border-top: 1px solid #eee;
+}
+
+.femora-ai-input input {
+  flex: 1;
+
+  border: 1px solid #ddd;
+
+  border-radius: 20px;
+
+  padding: 10px 14px;
+
+  outline: none;
+
+  font-size: 14px;
+}
+
+.femora-ai-input input:focus {
+  border-color: #b76e79;
+}
+
+.femora-ai-input button {
+  width: 40px;
+  height: 40px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #b76e79;
+
+  color: white;
+
+  cursor: pointer;
+}
