@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/scrolltoTop";
 import ThemeProvider from "./components/themeprovider";
 
-import Home from "./pages/Home";
+import Home from "./pages/home.jsx";
 import PlannerDetails from "./pages/plannerdetails.jsx";
 import Wellness from "./pages/wellness.jsx";
 
