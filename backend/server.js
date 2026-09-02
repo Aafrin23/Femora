@@ -38,20 +38,25 @@ connectDB();
 // ============================================================
 // MIDDLEWARE
 // ============================================================
+
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://frontend-jh0x51bn5-aafrins-projects-7c47528f.vercel.app",
+  "https://femora-webapp.vercel.app",
+  
 ];
 
 app.use(
   cors({
     origin: allowedOrigins,
     credentials: true,
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 
 app.use(express.json());
 
+app.use(express.json());
 // ============================================================
 // API ROUTES
 // ============================================================
