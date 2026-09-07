@@ -46,7 +46,7 @@ function Home() {
             <p className="py-4 text-xl italic text-black font-serif">
               Move Your Body, Feel Your Power, And Embrace Your Beauty!
               <br />
-              Level Up Together With Femora!
+              Level Up Together With Femora!!
             </p>
 
 
