@@ -41,7 +41,8 @@ connectDB();
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://femora-webapp.vercel.app",
+ // "https://femora-webapp.vercel.app",
+  "https://femora-roan.vercel.app",
   
 ];
 

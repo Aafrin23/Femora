@@ -8,7 +8,9 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://femora-hlt8.vercel.app/api",
+  baseURL: import.meta.env.DEV
+    ? import.meta.env.VITE_DEV_API_URL
+    : import.meta.env.VITE_PROD_API_URL,
 });
 
 export default API;
